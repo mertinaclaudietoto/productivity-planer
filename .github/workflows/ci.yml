@@ -31,6 +31,10 @@ jobs:
       # Audit de sécurité
       - name: Audit
         run: npm audit
+      
+      # Audit de sécurité 
+      - name: Audit
+        run: npm audit
 
       # Vérification de la signature des audits
       - name: Audit Signature
