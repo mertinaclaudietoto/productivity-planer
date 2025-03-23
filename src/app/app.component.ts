@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { environment } from '../environments/environment';
-
+// import { environment } from '../environments/environment';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -10,6 +9,4 @@ import { environment } from '../environments/environment';
 })
 export class AppComponent {
 
-  isProductionEnvironment = environment.production 
-  isFirebaseId = environment.firebaseConfig.projectId 
 }
