@@ -58,14 +58,25 @@
                 }
               ]
             },
-            "development": {
+            "staging": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ]
+            },
+            "dev": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
                 }
               ]
             }
@@ -78,11 +89,14 @@
             "production": {
               "buildTarget": "producivity-planer:build:production"
             },
-            "development": {
-              "buildTarget": "producivity-planer:build:development"
+            "staging": {
+              "buildTarget": "producivity-planer:build:staging"
+            },
+            "dev": {
+              "buildTarget": "producivity-planer:build:dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
