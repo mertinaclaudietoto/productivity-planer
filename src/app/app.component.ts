@@ -9,8 +9,7 @@ import { environment } from '../environments/environment';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'producivity-planer';
-  
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  readonly isstaging= !(environment as any).production
+
+  isProductionEnvironment = environment.production 
+  isFirebaseId = environment.firebaseConfig.projectId 
 }
